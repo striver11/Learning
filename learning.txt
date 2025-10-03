@@ -1,0 +1,2833 @@
+react
+
+upgrade code snippet using reducers, what reducers would you add& what they will do import React, (useReducer) from "react";
+
+const initialState = (
+
+status: "not-loaded",
+
+initialData: [.
+
+devicelist:
+
+updateNeeded: false,
+
+function reducer(state, action) (
+
+switch (action.type) {
+
+// TODO: Add appropriate cases here
+
+default:
+
+throw new Error("Something went wrong");
+
+const App = 0 => {
+
+const [state, dispatch] = useReducer(reducer, initialState);
+
+const (status, initialData, devicelist) = state;
+
+return (
+
+<div>
+
+<h1>Status: (status) </h1>
+
+Render or use initialData and devicelist */
+
+</div>
+
+):
+
+export default App;
+
+
+
+2
+how the given 2 components may communicate, advantages& disadvantages of each component import React, (useState) from "react";
+
+const ListFilter = 0 => (
+
+const [name, setName] = oseState();
+
+return (
+
+<div>
+
+<input name="search"" type="text" value=(name) />
+
+<label>
+
+Colour:
+
+<select multiple>
+
+<option>Red</option>
+
+<option>Green</option>
+
+<option>Blue</option>
+
+</select>
+
+</label>
+
+</div>
+
+k
+
+const ListOfitems = ((name)) => [
+
+const (items) useListQuery(/* current filter parameters */):
+
+return <div> [items.map((item) => <item item (item)/>)]</div>:
+
+
+3
+
+"improve search functionality which is slow& unresponsive import React, (useState) from ""react"";
+
+const App = 0 => 1
+
+const [foundCake, setFound Cake] = useState(); const cakeList = getCakes();
+
+const findCake = (val) => (
+
+const cake cakelist.find((cake) => cake.name.includes (val));
+
+setFound Cake(cake);
+
+return (
+
+<div>
+
+<div className=""search-box">
+
+<input
+
+type="text"
+
+onChange=((e] => findCake(e.target.value))
+
+/>
+
+</div>
+
+</div>
+
+
+4
+"find bugs& implement correct functionality example code snippet not original one import React, (useState) from "react"
+
+const Counter = (0=>1
+
+const [count, setCount) useState(0);
+
+const increment=0>
+
+count count 1
+
+setCount(count);
+
+k
+
+return (
+
+<div>
+
+<p>Current Count [count]</p>
+
+<button onClick=(increment)>Add</button>
+
+</div>
+
+1:
+
+export default Counter"
+
+
+
+5
+convert given code from dass component to functional component vice versa import React, Component | from
+
+react: ANSWER: Convert fc to class component
+
+import Reart, (useState) from "react
+
+const Toggle01
+
+const [visible, setViable) uneStateftrue
+
+const toggle01
+
+setVisible(prev) prev
+
+return (
+
+<div>
+
+<button onClick(toggle Toggle/button>
+
+1
+
+(visible & <p> This is visibile </p>]
+
+/div>
+
+export default Toggle
+
+Questionc class Greeting extends Component
+
+constructor(props) (
+
+supertpropsk
+
+this.state-
+
+上
+
+name: "John",
+
+updateName01
+
+this.setStatel name "lanet
+
+render()(
+
+retum (
+
+<d
+
+Hello, (this.state.namel</h1>
+
+<button onClick(this.updateName) Change Name</button>
+
+</div>
+
+A+4
+
+
+
+5
+
+CONVERT CLASS COMPONENT INTO FUNCTIONAL COMPONENT: "You are given a class-based React component that uses lifecycle methods like constructor, componentDidMount, component WillMount, componentWillipdate, and also has bind() for methods. Convert this class component into an equivalent functional component using Hooks."
+
+import React from "react",
+
+class App extends React.Component ( constructor(props) (
+
+1
+
+super(props);
+
+this state (count: 0);
+
+this.handleClick this.handleClick.bind(this);
+
+console.log("Constructor"
+
+componentWillMount)
+
+1
+
+console.log("Component will mount (deprecated)");
+
+componentDidMount(
+
+1
+
+console.log("Component did mount
+
+componentWilllUpdate() (
+
+1 console.log("Component will update)
+
+handleClick
+
+1
+
+this.setStatell court: this.state.count 11:
+
+render(
+
+console.log("Render method":
+
+return (
+
+<div> <h1>Count (this.state.count)</h1>
+
+<button onClick this.handleClick)>Increment</button>
+
+1
+
+export default App
+
+
+6
+
+CONVERT CLASS COMPONENT INTO FUNCTIONAL COMPONENT: "You are given a class-based React component that uses lifecycle methods like constructor, componentDidMount, component WillMount, componentWillipdate, and also has bind() for methods. Convert this class component into an equivalent functional component using Hooks."
+
+import React from "react",
+
+class App extends React.Component ( constructor(props) (
+
+1
+
+super(props);
+
+this state (count: 0);
+
+this.handleClick this.handleClick.bind(this);
+
+console.log("Constructor"
+
+componentWillMount)
+
+1
+
+console.log("Component will mount (deprecated)");
+
+componentDidMount(
+
+1
+
+console.log("Component did mount
+
+componentWilllUpdate() (
+
+1 console.log("Component will update)
+
+handleClick
+
+1
+
+this.setStatell court: this.state.count 11:
+
+render(
+
+console.log("Render method":
+
+return (
+
+<div> <h1>Count (this.state.count)</h1>
+
+<button onClick this.handleClick)>Increment</button>
+
+1
+
+export default App
+
+
+7
+
+"You're given a list of cakes (objects inside an array) and a functional component that maps and displays them. How does data flow between components? Also, how would you plement a feature to select one cake from the list and show it separately?"
+
+
+8
+
+You're given a large functional component with lots of logic and props.
+
+How would you improve the performance of this component using React features like useMemo, useCallback, and useContext?"
+
+9
+
+You have a functional component with a basic employee JSON like this: { id: 1, name: "Alice", assetAssigned: false } How would you update assetAssigned to true using useState in React?"
+
+10
+
+code snippet:
+
+We are working on a security system for a badged-access room in our company's building.
+
+Given an ordered list of employees who used their badge to enter or exit the room, write a function that returns two collections:
+
+1. All employees who didn't use their badge while exiting the room-they recorded an enter without a matching exit. (All employees are required to leave the room before the log ends.)
+
+2. All employees who didn't use their badge while entering the room - they recorded an exit without a matching eriter. (The room is empty when the log begins)
+
+Each collection should contain no duplicates, regardless of how many times a given employee matches the criteria for belonging to it.
+
+records1 =[
+
+["Paul", "enter"
+
+["Pauline", "ext"
+
+["Paul", "enter"]
+
+["Paul", "exit"]
+
+["Martha", "exit"],
+
+"Joe" "enter"]
+
+["Martha", "enter"]
+
+[Steve", "enter"
+
+["Martha", "exit"
+
+[Jennifer", "enter"l
+
+["loe", "enter"],
+
+"Curtis", "eat"]
+
+["Curtis", "enter"]
+
+[loe", "eat"]
+
+["Martha", "enter"]
+
+["Martha", "ent
+
+"Jennifer", "exit"
+
+Ploe", "enter"
+
+"Joe", "enter"
+
+["Martha", "ext"]
+
+'Joe", ext
+
+["loe", "eat"]
+
+]
+
+Expected output: ["Steve", "Curtis", "Paul", "Joe"], ["Martha", "Pauline", "Curtis", "Joe"]
+
+Other test cases:
+
+records2=1
+
+Paul", "enter"]
+
+"Paul", "exit"
+
+Expected output [], []
+
+records3=[
+
+["Paul", "enter").
+
+["Paul", "enter"
+
+["Paul", "exit"],
+
+["Paul", "exit"
+
+1
+
+Expected output: "Paul"], ["Paul"]
+
+records4=
+
+["Raj", "enter"]
+
+["Paul", "enter"
+
+["Paul", "exit"]
+
+"Paul", "exit"
+
+1
+
+"Paul", "enter"],
+
+["Raj", "enter"],
+
+Expected output: ["Raj", "Paul"], ["Paul"]
+
+All Test Cases:
+
+mismatches(records1)=> ["Steve", "Curtis", "Paul", "Joe"], ["Martha", "Pauline", "Curtis", "Joe"]
+
+mismatches(records2)=> [[]
+
+mismatches[records-4)=> [Raj", "Paul", "Paul"]
+
+mismatches(records3) ["Paul"], ["Paul"]
+
+rolength of the badge records array
+
+Time 00
+
+Space 00
+
+const records1 = [
+
+["Paul", "enter"],
+
+["Pauline", "exit"],
+
+["Paul", "enter"],
+
+["Paul", "exit"],
+
+["Martha", "exit"],
+
+["Joe", "enter"],
+
+["Martha", "enter"],
+
+["Steve", "enter"],
+
+["Martha", "exit"],
+
+["Jennifer", "enter"],
+
+["Joe", "enter"],
+
+["Curtis", "exit"],
+
+["Curtis", "enter"],
+
+["Joe", "exit"],
+
+["Martha", "enter"],
+
+["Martha", "exit"],
+
+["Jennifer", "exit"],
+
+["Joe", "enter"],
+
+["Joe", "enter"],
+
+["Martha", "exit"],
+
+["Joe", "exit"],
+
+["Joe", "exit"]
+
+const records2 = [
+
+["Paul", "enter"],
+
+["Paul", "exit"]
+
+const records3 = [
+
+["Paul", "enter"],
+
+["Paul", "enter"],
+
+["Paul", "exit"],
+
+["Paul", "exit"]
+
+];
+const records4 = [
+
+["Raj", "enter"],
+
+["Paul", "enter"], ["Paul", "exit"], ["Paul", "exit"], 1; ["Paul", "enter"], ["Raj", "enter"]
+
+function findinvalidBadgeRecords(records){
+
+const inside = new Set(0);
+
+const enteredWithoutExit = new Set();
+
+const exitedWithoutEnter = new Set();
+
+for(const [name, action] of records){
+
+if(action === "enter"){
+
+if(inside.has(name)){ enteredWithoutExit.add(name); } else ( inside.add(name);
+
+} } else if(action === "exit"){ if(!inside.has(name)){ exitedWithout Enter.add(name); Jelse ( inside.delete(name); } }
+
+for(const name of inside) ( enteredWithoutExit.add(name);
+
+return [Array.from(enteredWithoutExit), Array.from(exitedWithoutEnter));
+
+console.log(findInvalid Badge Records(records4));
+
+
+
+
+dsa
+
+1
+
+You are given:
+
+An array of lowercase strings:
+
+const words ["bonney", "bubble", "carrot", "zack"];
+
+A lowercase secret string:
+
+const secret "cat":
+
+Your task is to write a function findSecretWord(words, secret) that:
+
+Returns the first word from the list that contains all characters in secret with equal or higher frequency.
+
+The order of characters in secret does not matter (ie, it can be jumbled).
+
+If no such word exists, return "No Match".
+
+Function Signature
+
+function findSecretWord(words: string[], secret: string): string
+
+Input Constraints
+
+1 words.length <= 10^4
+
+1 words[i].length <= 100
+
+1<= secret.length <=100
+
+All words and the secret string consist of lowercase English letters only
+
+Examples
+
+Example 1:
+
+Input: words["bonney", "bubble", "carrot", "zack" secret "cat";
+
+Output:
+
+"camot
+
+Example 2
+
+Input words calculattor", "submarine", "banana" serret "tac"
+
+Output: "calculattor
+
+> Note: tac is a jumbled form of "cat"-frequency match still valid
+
+Example 3
+
+Input:
+
+words ["book", "boo", "boooook", "rookie" secret "ookb":
+
+Output
+
+"book"
+
+Edge Cases
+
+Test Case Input Output Reason
+
+Empty List [ "abc" "No Match" No candidates
+
+Repeated Letters ['cabbage", "cab", "cabb"], "cabb" "cabb" 2 'b' required
+
+Secret Letters Mesing ["loop", "pool", "looped", "pool" "pool" Valid letter counts
+
+Long Noisy Words ["distraction", "construction", "accurate"], "ace" "accurate" All letters present
+
+Case Sensitivity "Cat", "tac", "act", "cat" "No Match Only lowercase allowed
+
+
+
+java
+
+Question 
+Question based on HashMap scenario, when the key will be null
+
+Question on how can we optmize our code
+
+Analyze the code and suggest ways to improve the performance.
+
+2
+
+Analyze the code and make necessary code changes to throw an exception instead of retuming null when a key is not found in a map
+
+import java.util. HashMap
+
+import java.util.Map
+
+public class UserService |
+
+private static Map<String, String> userMap new HashMap<>D
+
+static
+
+1
+
+userMap.put("user", "Alice"
+
+userMap put("user?", "Bob"
+
+public static String getUserByld(String userld) (
+
+if (DuserMap.containsKey(userid)) [
+
+1
+
+return null//? Modify this to throw a custom exception instead of returning null, use throw keyword
+
+retum userMap.get(userid
+
+public static void main(String[] args) (
+
+String name getUserbyld("user3"); // Key does not exist
+
+System.out.println(name); // Expecting: null
+
+// Custom exception already present
+
+class UserNotFoundException extends RuntimeException (
+
+public UserNotFoundException(String message
+
+superímessagek
+
+
+2
+
+Analyze the code and find out the place where it throws null pointer exception and the reason for it.
+
+
+3
+Analyze the code and suggest way to control creation of multiple instances in the singleton class.
+
+Answer: Make the getGameBoard method synchronized or add the it condition inside synchronized block.
+
+public class GameBoard (
+
+private static GameBoard gameBoard:
+
+private Gamefloard()()
+
+public static GameBoard getGameBoard() { //Answer: public static synchronized GameBoard getGameBoard()
+
+if (gameBoard null)
+
+gameBoard = new GameBoard();
+
+retum gamefloard;
+
+1
+
+
+4
+1st question )You have a Singleton class MySingleton, but it's being accessed incorrectly from another class. public class MySingleton (
+
+public static MySingleton instance = new MySingleton();
+
+private MySingleton
+
+public void showMessage(
+
+1
+
+1
+
+System.out.println("Hello")
+
+Another class
+
+public class MainClass
+
+public static void main(String[] args) MySingleton obj = new MySingleton(); obj.showMessage():
+
+Solution:
+
+public class MySingleton (
+
+private static MySingleton instance,
+
+private MySingleton() {
+
+public static MySingleton getInstance() (
+
+if (instance null) ( instance = new MySingleton():
+
+return instance,
+
+public void showMessage()
+
+System.out.println("Hello!");
+
+}
+}
+public class MainClass {
+
+public static void main(String[] args) {
+
+MySingleton obj = MySingleton.getInstance();
+
+obj.showMessage();
+
+}
+
+}
+
+
+5
+split("") doesn't handle multiple spaces correctly; results in empty strings
+
+public class Reverse Words (
+
+public static void main(String[] args) {
+
+String input Hello World";
+
+String[] words = input.split(" ");
+
+for (int i = words.length-1; i >= 0; i--) {
+
+System.out.print(words[i] + " ");
+
+1
+
+public class ReverseWords (
+
+public static void main(String[] args) {
+
+String input="Hello World"; String words = input.trim().split("\\s+");
+
+for (int i= words.length - 1; i >= 0; i--) { System.out.print(words[i] + " ");
+
+}}}
+
+
+
+5
+
+You are analyzing data for Aquaintly, a hot new social network
+
+On Aquaintly, connections are always symmetrical. If a user Alice is connected to llob, then Bob is also connected to Alice.
+
+You are given a sequential log of CONNECT and DISCONNECT events of the following forme This event connects users Alice and Bob: "CONNECT", "Alice", "Bob"]
+
+-This event disconnects the same users: "DISCONNECT", "Bob", "Alice"] (order of users does not matter)
+
+We want to separate users based on their populanty (number of connections). To do this, write a function that takes in the event log and a number N and returns two collections:
+
+[Users with fewer than N connections), (Users with N or more connections)
+
+Example:
+
+events
+
+[CONNECT", "Alice", "Bob"]
+
+"DISCONNECT", "Bob", "Alice"L
+
+["CONNECT", "Alice", "Charlie",
+
+["CONNECT", "Dennis", "Bob"
+
+"CONNECT", "Pam", "Dennis"1"
+
+[DISCONNECT", "Pam","Dennis"],
+
+CONNECT", "Pam", "Dennis"
+
+CONNECT", "Edward", "Bob"L
+
+[CONNECT", "Dennis", "Charlie"
+
+"CONNECT", "Alice", "Nicole"L
+
+CONNECT", "Pam", "Edward"]
+
+["DISCONNECT", "Dennis", "Charlie"],
+
+["CONNECT", "Dennis", "Edward"
+
+"CONNECT", "Charlie", "Bob"
+
+Using a target of 3 connections, the expected results are Users with less than 3 connections: ["Alice", "Charlie", "Pam", "Nicole"]
+
+Users with 3 or more connections: ['"Dennis", "Bob", "Edward"]
+
+All test cases
+
+groupinglevents. 3) [["Alice", "Charke", "Pam", "Nicole", "Dennis", "Bob", "Edward"] groupinglevents, 1)[I], ["Alice", "Charlie", "Dennis", "Bob", "Pam", "Edward", "Nicole"] groupinglevents, 10) [["Alice", "Charlie", "Dennis", "Bob", "Pam", "Edward", "Nicole"], [[
+
+Complexity Vanable
+
+E=number of events
+
+**/
+
+import java.io.*;
+
+import java.util.*;
+
+import javafx.util.Pair,
+
+public class Solution {
+
+public static void main(String[] argv) {
+
+String events = {
+
+("CONNECT", "Alice", "Bob"),
+
+("DISCONNECT", "Bob", "Alice"), ["CONNECT", "Alice", "Charlie"), ("CONNECT", "Dennis", "Bob"), {"CONNECT", "Pam", "Dennis"), ("DISCONNECT", "Pam", "Dennis"), {"CONNECT", "Pam", "Dennis"), ("CONNECT", "Edward", "Bob"), ["CONNECT", "Dennis", "Charlie"], ("CONNECT", "Alice", "Nicole"), ("CONNECT", "Pam", "Edward"), ("DISCONNECT","Dennis", "Charlie"), ("CONNECT", "Dennis", "Edward"}, ("CONNECT", "Charlie", "Bob")
+
+}}
+
+
+
+6
+You are with your friends in a castle, where there are multiple rooms named after flowers. Some of the rooms contain treasures-we call them the treasure rooms.
+
+Each room contains a single instruction that tells you which room to go to next.
+
+**instructions 1 and treasure_rooms_1**
+
+lily
+
+daisy sunflower
+
+111
+
+jasmin tulip violet
+
+rose-->
+
+ins
+
+denotes a treasure room, eg, rose is a treasure room, but jasmin isn't.
+
+This is given as a list of pairs of (source room, destination_room)
+
+instructions 1
+
+1
+
+jasmin", "tulip"
+
+["lily", "tulip"],
+
+["tulip", "tulip"]
+
+[rose", "rose"
+
+['violet", "rose"].
+
+["sunflower", "violet
+
+["daisy", "violet"],
+
+["inis", "violet"]
+
+treasure rooms 1["lily", "tulip", "violet", "rose"]
+
+Write a function that takes two parameters as input:
+
+a list of instructions represented as pairs of (source room, destination_room), and
+
+a list containing the treasure rooms,
+
+and returns a collection of all the rooms that satisfy the following two conditions
+
+at least two other rooms have instructions pointing to this room
+
+this room's instruction immediately points to a treasure room
+
+filter roomslinstructions 1, treasure rooms 1) => [tulip", "Violet"]
+
+tulip can be accessed from rooms lily and jasmin. Tulip's instruction points to a treasure room (tulip itself)
+
+violet can be accessed from daisy, sunflower and iris. Violet's instruction points to a treasure room (rose)
+
+Additional inputs
+
+treasure_rooms 2=["'lily", "jasmin", "violet"]
+
+filter rooms(instructions 1, treasure_rooms 2) => [
+
+none of the rooms reachable from tulip or violet are treasure rooms
+
+*** instructions 2 and treasure rooms 3***
+
+lily
+
+arch
+
+jasmin tulip
+
+violet
+
+instructions 2-1
+
+jasmin", "tulip"
+
+1
+
+["lily", "tulip"], ["tulip", "violet"
+
+["violet", "violet"]
+
+treasure rooms 3 = [violet"]
+
+filter_rooms(instructions 2, treasure rooms_3] > ["tulip"]
+
+tulip can be accessed from rooms lily and jasmin, Tulip's instruction points to a treasure room (violet)
+
+All the test cases
+
+filter rooms(instructions, 1, treasure rooms 11
+
+tulip", "violet"]
+
+filter rooms(instructions 1, treasure rooms 2)
+
+filter rooms(instructions 2, treasure rooms
+
+31[tulip"]
+
+Complexity Analysis variables
+
+T: number of treasure rooms
+
+number of instructions given
+
+Complexity Analysis variables:
+
+T: number of treasure rooms
+
+1: number of instructions given
+
+**/
+
+import java.io.*;
+
+import java.util.*;
+
+import javafx.util.Pair;
+
+public class Solution {
+
+public static void main(String[] argv) (
+
+String instructions_1 = {
+
+{"jasmin", "tulip"), ("lily", "tulip"), ["tulip", "tulip"), ): {"rose", "rose"), ("violet", "rose"), ["sunflower", "violet"}, ["daisy", "violet"). ("iris", "violet"]
+
+String instructions_2 = { 12 ("jasmin", "tulip") ["lily", "tulip"). ["tulip", "violet"), ["violet", "violet")
+
+String[] treasure_rooms_1 = ["lily", "tulip", "violet", "rose"); String treasure_rooms_2 = ["lily", "jasmin", "violet"); String treasure_rooms_3= ["violet");
+
+
+
+7
+You are running a classroom and suspect that some of your students are passing around the answer to a multiple choice question disguised as a random note.
+
+Your task is to wnte a function that, given a list of words and a note, finds and retums the word in the list that is scrambled inside the note, if any exists. If none exist, it returns the result as a string. There will be at most one matching word. The letters don't need to be in order or next to each other. The letters cannot be reused.
+
+Example
+
+words=["baby", "referee", "cat", "dada", "dog", "bird", "ax", "baz"] note1="ctay find(words, note1)> "cat" (the letters do not have to be in order)
+
+note2 "bcanihjsmferet" find words, note2)>"cat" (the letters do not have to be together)
+
+note3 "tbaykkjlga find(words, note3) > (the letters cannot be reused)
+
+note4bbbbikkjbaby find words, note-4) => "baby"
+
+notes "dad" find words, note5)
+
+note= "breadmaking find(words, note6) "bird"
+
+note? "dadas" find words, note7)> "dada"
+
+All Test Cases
+
+find(words, note1) -> "cat" find(words, note2) -> "cat" find(wants, note3) find words, note4) "baby" find words, note5) find(words, note) "bird" find words, note?) "dada"
+
+Complexity analysis vanabiles:
+W= number of words in 'words'
+
+S= maximal length of each word or of the note
+
+import java.io.*;
+
+import java.util.*;
+
+import javafx.util.Pair,
+
+public class Solution (
+
+}
+
+public static void main(String[] argv) {
+
+String[] words = ["baby", "referee", "cat", "dada", "dog", "bird", "ax", "baz"]:
+
+String note1="ctay";
+
+String note2 = "bcanihjsrrrferet";
+
+String note3 = "tbaykkjlga";
+
+String note4 = "bbbblkkjbaby";
+
+String notes "dad";
+
+String note6 = "breadmaking";
+
+String note7 "dadaa;
+}}
+
+
+8
+You are running a classroom and suspect that some of your students are passing around the answer to a multiple-choice question disguised as a random.note.
+
+Your task is to write a function that, given a list of words and a note, finds and returns the word in the list that is scrambled inside the note, if any exists. If none exist, it returns the result as a string. There will be at most one matching word. The letters need to be in order or next to each other. The letters can reused
+
+Example:
+
+words=["baby", "referee", "cat", "dada", "dog", "bird", "ax", "baz"] note1="ctay" find(words, note?) > "cat" (the letters do not have to be in order) sort words once use any letter cat
+
+note2 "bcanitysrrieret find(words, note2] => "cat" (the letters do not have to be together) Sort"cat"
+
+note3 "thaykkjiga find words, note3) (the letters cannot be reused)
+
+note "bbbblkkybaby find words, note4)> "haby" sort"cat", "baby"
+
+notes="dad" find words, note5) Sort-"cat", "batry", "dad"
+
+note "breadmaking" findwords, note) "bad" Sort"cat", "baby", "dad", "bird"
+
+note?"tadas" Adwords, note?) "data" Sortcat, batay", "dad", "bind","dada"
+All Test Cases:
+
+find(words, note 1) -> "cat"
+
+find(words, note2) -> "cat"
+
+find(words, note3) -> "-"
+
+find(words, note4) -> "baby"
+
+find(words, note5) -> "-"
+
+find(words, note6) -> "bird"
+
+find(words, note7) -> "dada"
+
+Complexity analysis variables:
+
+W = number of words in 'words'
+
+S= maximal length of each word or of the note
+
+
+
+
+Node
+we have a list of robot names and the parts as given below
+
+allParts=
+
+"Rosie sensor",
+
+"optimus_speaker",
+
+"Rosie_horn",
+
+"Ruby_antenna",
+
+"victor_display",.-
+
+"Rosie_speaker",
+
+"Optimus_sensor",
+
+"Ruby_sensor",
+
+"Nova_claw",
+
+"Optimus_display",
+
+"Rosie_display",
+
+"Ruby_claw",
+
+"Optimus_claw",
+
+"Victor_antenna"
+
+required_parts1=["sensor", "speaker","display", "claw"]
+
+required_parts2=["sensor","speaker", "dispay"]
+
+required_part3=["antenna","claw"]
+
+return the robots that requires all the parts in required_parts.
+
+get_robot_for_required_part_1=[optimus]
+
+get_robot_for_required_part_2=[rosie, optimus]
+
+get_robot_for_required_part_3=[Ruby]
+
+
+
+2
+Analyze the given code
+
+1. explain where we can improve readability and maintainability
+
+2.Explain what security issues are present
+
+3. Do you find any issues with the code, if yes, please provide the reasons.
+
+
+3
+You are running a classroom and suspect that some of your students are passing around the answer to a multiple-choice question in 2D grids of letters. The word may start anywhere in the grid, and consecutive letters can be either immediately below or immediately to the right of the previous letter.
+
+Given a grid and a word, write a function that returns the location of the word in the grid as a list of coordinates. If there are multiple matches, return any one.
+
+grid1 = [
+
+1
+
+['b', 'b', 'b', 'a', T, Τ, ο, ο
+
+['b', 'a', 'c', 'd', 'e', s, c, n'],
+
+['a', 'T, t, 'e', 'w, 'c', 'e', 'wl ['a', 'T, 'o', 's', 's', 'e', 'c', 'cl
+
+['w', 'o', 'o', 'w, 'a', 'c', 'a', 'w'],
+
+['i, 'b', 'w', 'o', 'w', 'w, 'o', 'w']
+
+word1_1 = "access"
+
+# [(1, 1), (1, 2), (1, 3), (2, 3), (3, 3), (3, 4)]
+
+word1 2 "balloon
+
+# [(0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7), (1, 7)]
+
+word1_3 "wow"
+
+#[14, 3), (5, 3), (5, 4)] OR #1(5, 2), (5, 3), (5, 4)] OR #1(5, 5), (5, 6), (5, 7)1
+
+word1_4 = "sec"
+
+#[3, 4), (3:5), (3, 6)] OR #(3, 4), (3, 5), (4, 5))
+
+word1_5 "bbaal
+
+# [(0, 0), (1, 0), (2, 0), (3, 0), (3, 1)]
+
+1
+
+grid2 = [
+
+1
+
+Гал
+
+word2_1="a"
+
+grid3 = [
+
+[e, al
+
+('h', al
+
+['a', 'c'].
+
+
+word3 1=^ ca * t deg
+
+word3 2"hat
+
+grid41
+
+1
+
+१८, ८, ४, ५, т. б],
+
+[C, a, T, W, T, TL
+
+[a. x. n, x, p. 11
+
+[Τ. Χ.Τ. Χ.Τ. τη
+
+word4_1="catnip" #(1, 0), (1, 1), (1, 2), (1, 3), (1, 4), (2, 4)] OR (0, 1), (1, 1), (1, 21, (1, 3), (1, 4), (2, 4)]
+
+All test cases:
+
+search(grid1, word1_1 eta=> I(1, 1) 1, 2), (1, 3), (2, 3), (3, 31, (3,4))
+
+search(grid1, word1 \ 2\ =>\ (0, 2) (0, 3), (0, 4), (0, 5), (0,6), (0,7), (1,71
+
+searchigrid 1, word1 3) => [(4, 3), (5, 3), (5, 4)) OR (15,2), (5, 3), (5, 4)] OR ((5, 5), (5, 6), (5, 7)1
+
+search(grid 1, word1_4) => (3, 4), (3, 5), (3, 6) OR (3, 4), (3, 5), (4, 5)]
+
+search(grid 1, word1_5) I=>\ (0, 0) , 1, 0), (2, 0), (3, 0), (3, 1)]
+
+search(grid2, word2_1) I=> \{(0, 0)\}
+
+search(grid3, word3_1) =>\ (0, 0) , (0, 1), (1, 13)
+
+search(grid3, word3_2 eta=> \{Q, 0\} , (3, 0), (4, 0}]
+
+search(grid 4, word4_1 II=> I(1, 0) * L (1, 1), (1, 2), (1, 3), (1, 4), (2, 4)] OR ((0, 1), (1, 1), (1, 2), (1, 3), (1, 4), (2,40
+
+Complexity analysis variables:
+
+number of rows f = 1
+
+cnumber of columns c =
+
+wlength of the word
+
+const grid1=1
+
+['b', 'b', 'b', 'a, T. T. 0,01
+
+[b, a, c, c, e, ४.४,
+
+[a, T. T. e. w. c. e. wl
+
+[a. To se.c
+
+Iw, o, o w, ac a. wl.
+
+fi, b. w. o. w. w. o. wi
+
+1 const wort 1 arres
+
+
+const word1_1 = "access";
+
+const word1_2 = "balloon";
+
+const word1_3 = "wow";
+
+const word1_4 = "sec":
+
+const word1 _5 = "bbaal";
+
+const grid2 = [ ['a']
+
+];
+
+const word2 1 = "a":
+
+const grid3 = [
+
+['c', 'a'], ['t, t], ['h', 'a'], ['a', 'c'], ['t 'g]
+
+];
+
+const word3_1 = "cat";
+
+const word3_2 = "hat";
+
+const grid4 = [
+
+]; [c, 'c', 'x', 't, T., b]. ['c', 'a', 't, 'n', 'T. Τη ['a', 'x', 'n', 'x', 'p', 't], ['t, x, T. x. t. 1]
+
+const word4_1 = "catnip";
+او
+
+
+4
+We have a catalog of song titles (and their lengths) that we play at a local radio station. We have been asked to play two of those songs in a row, and they must add up to exactly seven minutes long.
+
+Given a list of songs and their durations, write a function that returns the names of any two distinct songs that add up to exactly seven minutes. If there is no such pair, return an empty collection.
+
+Example:
+
+song_times_1 = [
+
+1
+
+("Stairway to Heaven", "8:05"), ("Immigrant Song", "2:27"),
+
+("Rock and Roll", "3:41"), ("Communication Breakdown", "2:29"), ("Good Times Bad Times", "2:48"), ("Hot Dog", "3:19"),
+
+("The Crunge", "3:18"), ("Achilles Last Stand", "10:26"),
+
+("Black Dog", "4:55")
+
+find_pair(song_times_1) => ["Rock and Roll", "Hot Dog"]
+
+(3:41 + 3:19 = 7:00)
+
+
+
+
+5
+Analyze the given code first (It had SQL query interactions, User role permissions and nested if else conditions), then:
+
+1. Explain the whole code, as to what it's doing
+
+2. Make the code more readable and maintainable
+
+3. We are extracting data somewhere in the code, where there seems to be a syntax issue, or something is fundamentally wrong. Remediate that 4. Remediate any security vulnerabilities in the code
+
+
+
+
+6
+Code snippet given having 3 methods - reverse, reverseWords and fetchFromMySqlDb
+
+Question:
+
+1. What this code snippet is doing
+
+2. What part of the code is not readable and how it can be improved
+
+3. FetchFromMySqlDb is not returning the proper result, fix the code to get the proper output
+
+4. Write Test Cases for all the methods
+
+
+
+
+7
+
+Given an API returning a list of todos, we want to display the list in a performant way.
+
+Here are the functional requirements:
+
+- Initially, display the first 20 todos.
+
+On the top of the page, display the total number of loaded todos.
+
+- Display a ""Load More"" button, and every time the user clicks on it, fetch and display 20 more todos.
+
+- When the total number of loaded todos reaches 100, the ""Load More"" button should be hidden.
+
+N
+
+Use this endpoint URL to get the todos: https://dummyjson.com/todos?limit=20&skip=0.
+
+You may change the skip and limit query params to load new todos. The endpoint will return the following structure with a
+
+total of 20 todos:
+
+""todos"": [
+
+{
+
+""id"": 1,
+
+""todo"": ""Do something nice for someone I care about"",
+
+{ }.
+
+""completed"": true,
+
+""userld"": 26
+
+1.
+
+
+
+
+8
+
+Code snippet given having 3 methods - reverse, reverseWords and fetchFromMySqlDb Questions: 1. What do you understand by the code, explain?
+
+2. What part of the code is not readable and how it can be improved.
+
+3. FetchFromMySqlDb is not returning the proper result, fix the code to get the proper output
+
+4. Write Test Cases the code snippet
+
+
+9
+
+A large e-commerce site is looking to expand into mobile phone sales.
+
+They want to add the ability to search for both phones and accessories using product search and filter features.
+
+The requirements for this feature are:
+
+Implement a search bar where users can enter a query to search for products.
+
+Display the search results in a list, showing the product title, price and category.
+
+The results must be limited to only those from the phones and mobile accessories categories.
+
+Implement a filter to further limit the products only from one of the two specific categories (smartphones, mobile-accessories).
+
+Allow users to search products in both categories (without no filter selected) or with the search and filter queries (e.g., search for "iPhone" within the "smartphones" category).
+
+Show a message if no products match the search and filter criteria.
+
+This endpoint can be used to fetch a list of products: https://dummyjson.com/products/search?q=(query),
+
+
+10
+
+A social media site you are working on is looking to add a real-time notification system to display new user comments.
+
+The desired functionality for this system is:
+
+When the page loads, display the first 5 comments.
+
+Check for new comments every 5 seconds and display them without refreshing the page.
+
+Highlight new comments with a different background color for exactly 5 seconds after they are added.
+
+- Remove the highlight from previous new comments after 5 seconds have elapsed.
+
+You can use this endpoint to fetch comments for testing: https://dummyjson.com/comments?limit=5. Each comment has the following&...
+
+"comments": [
+
+{
+
+{
+
+"id": 1,
+
+"body": "You have a new follower!",
+
+}
+
+1
+
+}
+
+To simulate new comments, use the skip parameter by incrementing the value passed to it.
+
+
+
+10
+
+A social media site you are working on is looking to add a real-time notification system to display new user comments.
+
+The desired functionality for this system is:
+
+When the page loads, display the first 5 comments.
+
+Check for new comments every 5 seconds and display them without refreshing the page.
+
+Highlight new comments with a different background color for exactly 5 seconds after they are added.
+
+- Remove the highlight from previous new comments after 5 seconds have elapsed.
+
+You can use this endpoint to fetch comments for testing: https://dummyjson.com/comments?limit=5. Each comment has the following&...
+
+"comments": [
+
+{
+
+{
+
+"id": 1,
+
+"body": "You have a new follower!",
+
+}
+
+1
+
+}
+
+To simulate new comments, use the skip parameter by incrementing the value passed to it.
+
+
+
+11
+Given an API returning a list of todos, we want to display the list in a performant way.
+
+Here are the functional requirements:
+
+- Initially, display the first 20 todos.
+
+- On the top of the page, display the total number of loaded todos.
+
+- Display a "Load More" button, and every time the user clicks on it, fetch and display 20 more todos.
+
+- When the total number of loaded todos reaches 100, the "Load More" button should be hidden.
+
+Use this endpoint URL to get the todos: https://dummyison.com/todos?limit=20&skip=0
+
+You may change the skip and limit query params to load new todos. The endpot will return the following structure with a
+
+total of 20 todos:
+
+{
+
+" todos": [
+
+"id": 1,
+
+"completed": true,
+
+1. "todo": "Do something nice for someone I care about",
+
+"userld": 26
+
+
+
+skill
+We are building a program to manage a gym's membership. The gym has multiple members, each with a unique ID, name, and membership status. The program allows gym staff to add new members, update members status, and get membership statistics.
+
+
+
+2
+
+We are building a program to manage a gym's membership. The gym has multiple members, each with a unique ID, name, and membership status. The program allows gym staff to add new members, update members status, and get membership statistics
+
+Definitions
+
+A "member" is an object that represents a gym member. It has properties for the ID, name, and membership status
+
+A "membership" is a class which is used for managing members in the gym.
+
+To begin with, we present you with two tasks
+
+1-1) Read through and understand the code below. Please take as much time es necessary, and feel free to run the code 1-2) The test for Membership is not passing due to a bug in the code. Make the necessary changes to Membership to fix the
+
+bug
+
+import java.util.
+
+import org.junit. Test
+
+import static org junit Assert.";
+
+enum MembershipStatus (
+
+Membership Status is of three types: BASIC, PRO and ELITE
+
+BASIC is the default membership a new member gets.
+
+PRO and ELITE are paid memberships for the gym
+
+1
+
+"
+
+BASIC
+
+PRO
+
+ELITE
+}
+class Member (
+
+/* Data about a gym member.*/
+
+public int memberld:
+
+public String name;
+
+public MembershipStatus membershipStatus:
+
+public Member(int memberld, String name, MembershipStatus membershipStatus) (
+
+this.memberld = memberld;
+
+this.name name,
+
+this membershipStatus membershipStatus;
+
+en Kumar (You)
+
+ilpa
+
+1
+
+@Override
+
+public String toString() [
+
+return "Member ID: memberld, Name: name", Membership Status membershipStatus:
+
+Prathu
+
+A
+
+Tracker
+
+ameer
+
+X
+
+class Membership |
+
+Data for managing a gym membership, and methods which staff can
+
+use to perform any queries or updates.
+
+public List<Member> members,
+
+public Membership) (
+
+}
+
+members = new ArrayList<>(0
+public void addMember(Member member) [ members.add(member);
+
+1
+
+public void updateMembership(int memberid, MembershipStatus membershipStatus)(
+
+for (Member member: members) ( if (member.memberid memberid) {
+
+member.membershipStatus membership Status,
+
+Ort 1 L
+
+1
+
+1
+
+public MembershipStatistics getMembershipStatistics)
+
+ar (You)
+
+int totalMembers members.size).
+
+int totalPaidMembers 0
+
+for (Member member: members) (
+
+if (member membershipStatus MembershipStatus.PRO member.mimbershipStatus MembershipStatus ELITE)
+
+totalPaid Members...
+
+1
+
+double conversion Rate (totalPaid Members/(double) totalMembers) 100.0 return new MembershipStatistics (totalMembers, totalPaid Members, conversionflate):
+
+class MembershipStatistics (
+
+Class for retuming the getMembershipStatistics result
+
+public int total members
+
+public int total paid members
+
+public double conversion rate
+
+public MembershipStatistics(int total members, int total paid members, double conversion rate: 1
+
+this. total members total members
+
+this.total paid members total paid members
+
+this.conversion rate conversion rate
+
+1
+public class Solution
+
+This is not a complete test suite, but tests some basic functionality of
+
+the code and shows how to use it
+
+public static void main(String[] args)
+
+testMember
+
+testMembership
+
+public static void testMember) (
+
+System.out.printin Running testMember
+
+Member testMember new Member(1, "John Doe", MembershipStatus BASIC
+
+assert testMember memberld1
+
+assert testMember.name.equals("John Doe"
+
+assert testMember.membership Status MembershipStatus BASIC
+
+public static void testMembership() (
+
+System.out.println("Running testMembership
+
+Membership testMembership new Membership()
+
+Member testMember new Member(1, "John Doe", MembershipStatus PRO
+
+testMembership.addMember(testMember
+
+assert testMembership.members.size()1;
+
+assert testMembership.members.get().equals(JestMembert
+
+testMembership.updateMembership(1, MembershipStatus PROX
+
+assert testMembership.members.get(0).membershipStatus MembershipStatus.PRO
+
+Member testMember2 new Member(2, "Alex C", Membership Status BASIC) testMembership.addMember[testMembe(2)
+
+Member testMember3 new Member, "Marie C, Membership Status ELITEY testMembership.addMember/testMember 3)
+
+Member testMember4 new Member(4, "Joe D, MembershipStatus PROL testMembership.addMember(testMember
+
+MembershipStatistics attendanceStats testMembership.getMembershipStatistics
+
+assert attendanceStats total members
+
+assert attendanceStats.total paid members
+
+
+
+3
+
+We are writing software to analyze logs for toll booths on a highway. This highway is a divided highway with limited access th
+
+There are three types of toll booths:
+
+ENTRY (E in the diagram) toll booths, where a car goes through a booth as it enters the highway.
+
+EXIT (X in the diagram) toll booths, where a car goes through a booth as it exits the highway.
+
+MAINROAD (M in the diagram), which have sensors that record a license plate as a car drives through at full speed
+
+Exit Booth
+
+Entry Booth
+
+X
+
+E
+
+M
+
+(West-bound side)
+
+(East-bound side)
+
+M
+
+X
+
+1
+
+1
+
+Entry Booth
+
+Exit Booth
+
+We are interested in how many people are using the highway, and so we would like to count how many complete journeys are
+
+A complete journey consists of
+
+A driver entering the highway through an ENTRY toll booth
+
+The driver passing through some number of MAINROAD toll booths (passibly 01
+
+The driver eating the highway through an EXIT toll booth
+
+For example, the following excerpt of log lines contains complete journeys for the cars with 10004 and THOX138
+
+90750.191 JOX304 250E ENTRY
+
+91081.684 JOX304 260E MAINROAD
+
+91082.101 ΤHX138 110E ENTRY
+
+91483.251 JOX304 270E MAINROAD
+
+91873.920 THX138 120E MAINROAD
+
+91874.493 JOX304 280E EXIT
+
+91982.102 ΤHX138 290E EXIT
+
+You may assume that the log only contains complete journeys, and there are no missing entries
+
+
+4
+
+2-1) Write a function in LogFile named countJourneys() that returns how many complete journeys there are in the given LogFile.
+
+*/
+
+/*
+
+For our first task
+
+1-1) Read through and understand the code and comments below. Feel free to run the code and tests.
+
+1-2) The tests are not passing due to a bug in the code. Make the necessary changes to LogEntry to fix the bug.
+
+*/
+
+
+
+
+
+react
+
+1
+
+We are working on a back-office application that displays products available for purchase on our company's website. Currently, the code fails when attempting to fetch the data. Please identify why and fix it.
+
+Additionally, modify the given React application so that the ViewProduct component displays the following:
+
+The following information once the data is loaded:
+
+* Title, in bold
+
+Category
+
+* Price retrieved from the API formatted as dollars and cents with the dollar symbol, e.g. $450.00
+
+* Description
+
+* The thumbnail image
+
+Treat this like a production application, using appropriate best practices.
+
+The API data returned has the following shape:
+
+{
+
+"id": 1,
+
+"title": "iPhone 9",
+
+"description": "An apple mobile which is nothing like apple",
+
+"price": 549.99,
+
+"discountPercentage": 12.96,
+
+"rating": 4.69,
+
+"stock": 94,
+
+"brand": "Apple",
+
+"category": "smartphones",
+
+"thumbnail": "https://dummyjson.com/image/i/products/1/thumbnail.jpg"
+
+"images": [
+
+"https://dummyjson.com/image/i/products/1/1.jpg"...
+
+}
+import React, (useEffect, useState, useCallback) from "https://cdn.skypack.dev/react: import ReactDOM from "https://cdn.skypack.dev/react-dom
+
+const useFetch = (url, method) => { const [state, setState) = useState({ data: null, loading: true. error." });
+
+useEffect() => ( (async (0) => ( let response await fetch(url, (method )); if(!response.ok) { setState({ data: null, loading: false, error. 'An error occurred" });
+
+let data await response.json(); setState(( data, loading: false, error:" 100: 1. [urt, method])
+
+return state
+}
+
+const ViewProduct = ((id)) => {
+
+const {data, error, loading) = fetch('https://dummyjson.com/products/Slid)? select=id.title.category.description price thumbnail):
+
+console.log(data);
+
+return ( <div>View</div> );
+
+const ListProducts = ({changeLocation)) => {
+
+const (loading, error, data) useFetch("https://dummvison.com/products
+
+if(loading) return <div>Loading...</div> if(error) return <div>Error!</div>
+
+return ( <div> <h1>Products</h1>
+
+<ul> (data.products.map(product => (<li onClick=10 changeLocation(view', [id: product.id))) key=(product.id}> [product.title)</li>)}} </ul> </div>
+const App = (0) => {
+
+const [location, setLocation] = useState({ page: "view", params: { id: 1}));
+
+const changeLocation = useCallback((page, params) => (
+
+setLocation({page, params: patams || {0});
+
+), [setLocation])
+
+return (
+
+<div className="App">
+
+{location.page === "list" && <ListProducts changeLocation=(changeLocation)/>}
+
+{location.page === "view" && <ViewProduct id=(location.params.id)/>}
+
+{location.page !== "list" && (
+
+<div>
+
+<a className="link" onClick={(0) => changeLocation("list"))>Return to list</a>
+
+</div>
+
+)}
+
+</div>
+
+}
+
+)
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+2
+
+We are working on a back-office application that displays products available for purchase on our company's website.
+
+We would like to add pagination to the ListProducts page. The list should only show 10 products at a time, and the page should have links or buttons for navigating backwards and forw[ards in the list.
+
+*/
+
+import React, (useEffect, useState, useCallback} from 'https://cdn.skypack.dev/react';
+
+import ReactDOM from 'https://cdn.skypack.dev/react-dom';
+
+const useFetch = (url, method) => {
+
+const [state, setState] = useState({ data: null, loading: true, error: " });
+
+useEffect(() => {
+
+(async 0 => {
+
+let response = await fetch(url, (method });
+
+if(!response.ok) {
+
+setState({
+
+data: null,
+
+loading: false,
+
+error: 'An error occurred'
+
+});
+
+}
+
+let data = await response.json();
+
+setState({
+
+data,
+
+loading: false,
+
+error:
+
+}); 100:
+
+
+}, [url, method])
+
+return state;
+}
+const ViewProduct = ({id}) => {
+
+const (data, error, loading) = useFetch("https://dummyjson.com/products/" + id):
+
+if(loading) return <div>Loading...</div> if(error) return <div>Error!</div>
+
+return (
+
+<h1>(data.title)</h1>
+
+<div>Category: {data.category}</div>
+
+<> </> );
+
+<div>Price: $(data.price.toFixed(2)}</div>
+
+<div>Description: (data.description)</div>
+
+<div><img src={data.thumbnail) /></div>
+
+}
+
+const ListProducts = ({changeLocation}) => {
+
+const {loading, error, data) = useFetch("https://dummyjson.com/products")
+
+if(loading) return <div>Loading...</div>
+
+if(error) return <div>Error!</div>
+
+return (
+
+<div>
+
+<h1>Products</h1>
+
+<ul>
+
+{data.products.map(product => (
+
+<li>
+
+<a className="link" onClick={(0) => changeLocation("view", {id: product.id})}>
+
+{product.title}
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+);
+
+}
+const App = (0)>1
+
+const flocation, setLocation] = useState(l page: "list", params: 01 const [product, viewProduct]=useState(false);
+
+const changel.ocation useCallback((page, params) => [ setLocation((page, params: params || 01: 1. [setLocation))
+
+const useEffect(0)=>{
+
+return (
+
+<div className="App"> (location.page== "list" && (
+
+<div>
+
+<a className="link"
+
+<ListProducts changeLocation=(changelocation!/>
+
+</div>}}
+
+(location.page=== "view" & <ViewProduct id-flocation.params.id)/>] (location.page!== "list" && (
+
+<div> <a className"link" onClick=10> changelocation("list"))>Return to list</a> </div>
+
+</div>
+
+ReactDOM.render( App/, document.getElementById('root'])
+
+
+3
+
+We are working on a back-office application that displays products available for purchase on our company's website.
+
+We have a custom-built page routing system, but engineers are finding that there is too much boilerplate code for passing down the changeLocation function to every component that needs to manage navigation. Create a new React Context for sharing the current location and location update function, and update the components to
+
+use it.
+
+import React, (useEffect, useState, useCallback, useContext, createContext) from 'https://cdn.skypack.dev/react
+
+import ReactDOM from 'https://cdn.skypack.dev/react-dom
+
+const useFetch = (url, method) => 1
+
+const [state, setState] useState({
+
+data: null,
+
+loading: true,
+
+error:
+
+});
+
+useEffect(0) => (
+
+(async (0) => 1 let response await fetch(url, (method )); if(fresponse.ok) ( setState({ data: null, loading: false, 10: error: 'An error occurred
+
+let data await response.json();
+
+setState((
+
+data. loading: false, error:
+
+100. 1. furt, method)
+
+return state
+}
+const ViewProduct = ((id)) => {
+
+const {data, error, loading) = useFetch("https://dummyjson.com/products/" + id); if(loading) return <div>Loading...</div> if(error) return <div>Error!</div>
+
+return (
+
+<>
+
+<h1>(data.title}</h1>
+
+<div>Category: (data.category) </div>
+
+<div>Price: ${data.price.toFixed(2)} </div>
+
+<div>Description: (data.description)</div>
+
+<div><img src={data.thumbnail) /> </div>
+
+</>
+
+);
+
+}
+
+const ListProducts = ({changeLocation}) => (
+
+const {loading, error, data) = useFetch("https://dummyjson.com/products?limit=25")
+
+if(loading) return <div>Loading...</div>
+
+if(error) return <div>Error!</div>
+
+return (
+
+<div>
+
+<h1>Products</h1>
+
+<ul>
+
+{data.products.map(product => (
+
+<li>
+
+<a className="link" onClick=((0) => changeLocation("view", {id: product.id)))>
+
+{product.title}
+
+</a>
+
+</li>
+
+</ul>
+
+))}
+
+</div>
+
+}
+
+const App = () => {
+
+const [location, setlocation] = useState({ page: "list", params: (0));
+
+const changeLocation = useCallback((page, params) => { setLocation({page, params: params || {}});
+
+), [setLocation])
+
+return (
+
+<div className="App">
+
+{location.page === "list" && <ListProducts changeLocation={changeLocation)/>}
+
+{location.page === "view" && <ViewProduct id={location.params.id}/>}
+
+{ location.page!== "list" && (
+
+<div>
+
+<a className="link" onClick=(() => changeLocation("list"))>Return to list</a>
+
+</div>
+
+))
+
+</div>
+
+}
+
+)
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+4
+
+We have a catalog of song titles (and their lengths) that we play at a local radio station. We have been asked to play two of those songs in a row, and they must add up to exactly seven minutes long.
+
+Given a list of songs and their durations, write a function that returns the names of any two distinct songs that add up to exactly seven minutes. If there is no such pair, return an empty collection.
+
+Example:
+
+1
+
+song_times_1 =[
+
+("Stairway to Heaven", "8:05"), ("Immigrant Song", "2:27"),
+
+("Rock and Roll", "3:41"), ("Communication Breakdown", "2:29"), ("Good Times Bad Times", "2:48"), ("Hot Dog", "3:19")," ("The Crunge", "3:18"), ("Achilles Last Stand", "10:26"),
+
+("Black Dog", "4:55")
+
+find_pair(song_times_1) => ["Rock and Roll", "Hot Dog"] (3:41 + 3:19 = 7:00)
+
+Additional Input:
+
+song_times_2=1
+
+1
+
+("Stairway to Heaven", "8:05"), ("Immigrant Song", "2:27"),
+
+("Rock and Roll", "3:41"), ("Communication Breakdown", "2:29"), ("Good Times Bad Times", "2:48"), ("Black Dog", "4:55"),
+
+("The Crunge", "3:18"), ("Achilles Last Stand", "10:26"),
+
+("The Ocean", "4:31"), ("Hot Dog", "3:19"),
+
+song_times_3=1
+
+1
+
+("Stairway to Heaven", "8:05"), ("Immigrant Song", "2:27"),
+
+("Rock and Roll", "3:41"), ("Communication Breakdown", "2:29"), ("Hey Hey What Can I Do", "4:00"), ("Poor Tom", "3:00"), ("Black Dog", "4:55")}
+
+song times_4=1
+
+1
+
+("Hey Hey What Can I Do", "4:00"), ("Rock and Roll", "3:41"),
+
+("Communication Breakdown", "2:29"), ("Going to California", "3:30"),
+
+("On The Run", "3:50"), ("The Wrestler", "3:50"),
+
+("Black Mountain Side", "2:11"), ("Brown Eagle", "2:20")
+
+song_times_5 = [["Celebration Day", "3:30"), ("Going to California", "3:30"]
+
+song_times_6 = [
+
+("Rock and Roll", "3:41"), ("If I lived here", "3:59"),
+
+("Day and night", "5:03"), ("Tempo song", "1:57")
+
+1
+
+Complexity Variable:
+
+n=number of song/time pairs
+
+All Test Cases- snake_case:
+
+find_pair(song_times_1) => ["Rock and Roll", "Hot Dog"]
+
+find_pair(song_times_2) => ["Rock and Roll", "Hot Dog"] or ["Communication Breakdown", "The Ocean"]
+
+find_pair(song_times_3) => ["Hey Hey What Can I Do", "Poor Tom"]
+
+find pair(song_times_4) =>[
+
+find_pair(song times_5)=> ["Celebration Day", "Going to California"]
+
+find_pair(song_times_6) => ["Day and night", "Tempo song"]
+
+All Test Cases - camelCase:
+
+findPair(song Times 1) => ["Rock and Roll", "Hot Dog"]
+
+findPair(song Times2) => ["Rock and Roll", "Hot Dog"] or ["Communication Breakdown", "The Ocean"]
+
+findPair(song Times3) =>["Hey Hey What Can I Do", "Poor Tom"]
+
+findPair(song Times4) =>[]
+
+findPair(songTimes5) =>["Celebration Day", "Going to California"]
+
+findPair(song Times6) > ["Day and night", "Tempo song"]
+
+const songTimes1 = [
+
+['Stairway to Heaven', '8:05'], ['Immigrant Song', '2:27], ['Rock and Roll', '3:41'], ['Communication Breakdown', '2:29'], ['Good Times Bad Times', '2:48'], ['Hot Dog', '3:19'], ['The Crunge', '3:18'], ['Achilles Last Stand', '10:26'], ['Black Dog', '4:55']
+
+const song Times2 = [
+
+['Stairway to Heaven', '8:05'], ['Immigrant Song', '2:27'], ['Rock and Roll', '3:41'], ['Communication Breakdown', '2:29]. ['Good Times Bad Times', '2:48'], ['Black Dog', '4:55'], 1: ['The Ocean', '4:31'], ['Hot Dog', '3:19']
+
+['The Crunge', '3:18'], ['Achilles Last Stand", "10:26'],
+
+const song Times3 = [
+
+['Stairway to Heaven', '8:05'], ['Immigrant Song', '2:27'1 ['Rock and Roll'", "3:41'], ['Communication Breakdown', '2:29'), ['Hey Hey What Can I Do', '4:00'], ['Poor Tom', '3:001, ['Black Dog', '4:55']
+
+1;
+
+const song Times4 = [
+
+['Hey Hey What Can I Do', '4:00'], ['Rock and Roll', '3:417,
+
+['Communication Breakdown', '2:29'], ['Going to California", "3:30'),
+
+['On The Run', '3:50'], ['The Wrestler', 3:50],
+
+['Black Mountain Side', '2:11'], ['Brown Eagle', '2:201
+
+const song Times5 = [['Celebration Day', '3:30'], ['Going to California', '3:30']];
+
+const song Times6= [
+
+['Rock and Roll', '3:41'], ['If I lived here', '3:59'),
+
+['Day and night', '5:03'], ['Tempo song", "1:57]];
+
+
+
+5
+
+We are working on a back-office application that displays products available for purchase on our company's website. Currently, the code fails when attempting to fetch the data. Please identify why and fix it.
+
+Additionally, modify the given React application so that the ViewProduct component displays the following:
+
+* The following information once the data is loaded:
+
+* Title, in bold
+
+* Category
+
+* Price retrieved from the API formatted as dollars and cents with the dollar symbol, e.g. $450.00
+
+* Description
+
+* The thumbnail image
+
+Treat this like a production application, using appropriate best practices.
+
+The API data returned has the following shape:
+{
+
+"id": 1,
+
+"title": "iPhone 9",
+
+"description": "An apple mobile which is nothing like apple",
+
+"price": 549.99,
+
+"discountPercentage": 12.96,
+
+"rating": 4.69,
+
+"stock": 94,
+
+"brand": "Apple",
+
+"category": "smartphones",
+
+"thumbnail": "https://dummyjson.com/image/i/products/1/thumbnail.jpg",
+
+"images": [
+
+J
+
+"https://dummyjson.com/image/i/products/1/1.jpg",}
+
+import React, (useEffect, useState, useCallback) from 'https://cdn.skynack.dev/react import ReactDOM from 'https://cdn.skypack.dev/react-dom
+
+const usefetch= (url, method) => ( const state, setState] = useState(( data: null, loading: true, error: " });
+
+useEffect() => ( (async ) => 1 let response await fetch(url, (method)); if(!response.ok) ( setState({ data: null, loading: false, error: "An error occurred });
+
+} let data await response.json(); setState(( data, loading: false, error" ));
+
+1
+
+100: 1. Jurl, method))
+
+return state
+}
+const ViewProduct = ((id)) => {
+
+const (data, error, loading) = fetch('https://dummyjson.com/products/$(id)? select=id.title.category.description.price.thumbnail);
+
+console.log(data);
+
+return ( <div>View</div> ); }
+
+const ListProducts = ((changeLocation)) => {
+
+const (loading, error, data) = useFetch("https://dummyjson.com/products")
+
+if(loading) return <div>Loading...</div>
+
+if(error) return <div>Error!</div>
+
+return (
+
+<div>
+
+<h1>Products</h1>
+
+<ul>
+
+(data.products.map(product => (<li onClick=10=> changeLocation('view', (id: product.id))) key=(productid)> (product.title)</li>))} );
+
+</ul>
+
+</div>
+);}
+const App = () => {
+
+const [location, setLocation] = useState({ page: "view", params: (id: 1}});
+
+const changeLocation = useCallback((page, params) => {
+
+setLocation({page, params: params || {0});
+
+}, [setLocation])
+
+return (
+
+<div className="App">
+
+{location.page === "list" && <ListProducts changeLocation={changeLocation)/>)
+
+{location.page === "view" && <ViewProduct id={location.params.id)/>)
+
+{location.page !== "list" && (
+
+<div>
+
+<a className="link" onClick=(0) => changeLocation("list")}>Return to list</a>
+
+</div>
+
+</div>
+
+)
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+
+6
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Backbone.js template View</title>
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"
+
+type="text/javascript">
+
+</script>
+
+<script src=
+
+"https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"
+
+type="text/javascript">
+
+</script>
+
+<script src=
+
+"https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"
+
+type="text/javascript">
+
+</script>
+
+</head>
+
+<body>
+
+<h1 style="color: green;">
+
+GeeksforGeeks
+
+</h1>
+<h3>Backbone.js render View</h3>
+
+<div id="content"> </div>
+
+<script type="text/javascript">
+
+var Demo = Backbone.View.extend({
+
+el: $('#content'),
+
+initialize: function () {
+
+},
+
+this.render()
+
+render, function () {
+
+console.log(this.el),
+
+this.$el.html(
+
+"The $el variable here is: "
+
++ this.el);
+
+},
+
+});
+
+var myDemo = new Demo();
+
+</script>
+
+</body>
+
+</html>
+
+
+
+7
+
+Explain the project code given:
+
+1) project code includes functions of renderview, userview and posts to update the crud operations
+
+
+8
+
+Given an API returning a list of todos, we want to display the list in a performant way.
+
+Here are the functional requirements:
+
+- Initially, display the first 20 todos.
+
+On the top of the page, display the total number of loaded todos.
+
+- Display a "Load More" button, and every time the user clicks on it, fetch and display 20 more todos.
+
+When the total number of loaded todos reaches 100, the "Load More button should be hidden.
+
+Use this endpoint URL to get the todos: https://dummyjson.com/todos?limit=20&skip=0,
+
+You may change the skip and limit query params to load new todos. The endpoint will return the following structure with a
+
+total of 20 todos:
+
+" todos": [
+
+{
+
+"id": 1,
+
+{ },
+
+"todo": "Do something nice for someone I care about",
+
+"completed": true,
+
+"userld": 26
+
+1.
+
+}
+
+
+
+
+9
+
+Improve for DOM manipulations
+
+Enhancing the code and testing with suitable framework
+
+Javascript code for a social media platform to get the notifications of the new user comments
+
+Javascript code for a gym membership classes and their functionality, was asked to write utility functions functions, and and a bug to resolve from failing unit test case
+
+
+
+NOde
+
+1
+
+We are building a program to manage a gym's membership. The gym has multiple members, each with a unique ID, name, and membership status. The program allows gym staff to add new members, update members status, and get membership statistics.
+
+Definitions:
+
+*A "member" is an object that represents a gym member. It has properties for the ID, name, and membership status.
+
+"A"membership" is a class which is used for managing members in the gym.
+
+To begin with, we present you with two tasks:
+
+1-1) Read through and understand the code below. Please take as much time as necessary, and feel free to run the code.
+
+1-2) The test for Membership is not passing due to a bug in the code. Make the necessary changes to Membership to fix the
+
+bug
+
+import java.util.*;
+
+import org.junit.Test:
+
+import static org.junit.Assert.*;
+
+enum MembershipStatus (
+
+}
+
+/* Membership Status is of three types: BASIC, PRO and ELITE.
+
+BASIC is the default membership a new member gets.
+
+PRO and ELITE are paid memberships for the gym.
+
+BASIC, PRO
+
+ELITE
+}
+class Member (
+
+Data about a gym member."/
+
+public int memberld:
+
+public String name;
+
+public MembershipStatus membershipStatus:
+
+public Member(int memberld, String name, MembershipStatus membershipStatus) (
+
+this membeld memberid;
+
+this.name name,
+
+this membershipStatus membershipStatus:
+
+@Override
+
+public String toString(
+
+retum "Member ID: memberid", Name: name Membership Status membershipStatus
+
+class Membership (
+
+Data for managing a gym membership, and methods which staff can use to perform any queries or updates.
+
+public List<Member members
+
+public Membership) ( members = new ArrayList<>0
+
+public void addMember(Member member) [
+
+members.add(member);
+
+public void updateMembership(int memberld, MembershipStatus membershipStatus) (
+
+for (Member member: members)
+
+if (member memberld == memberid) ( member membershipStatus membershipStatus
+}}}
+
+public MembershipStatistics getMembershipStatistics) (
+
+int totalMembers = members.size();
+
+int totalPaidMembers = 0:
+
+for (Member member: members) {
+
+if (member membershipStatus MembershipStatus. PRO || member.membershipStatus MembershipStatus ELITE
+
+totalPaidMembers++;
+
+1 double conversion Rate (totalPaidMembers/(doüble) totalMembers) 100.0
+
+retum new MembershipStatistics(totalMembers, totalPaidMembers, conversionftate);
+
+class MembershipStatistics (
+
+م
+
+Class for returning the getMembershipStatistics result
+
+public int total members
+
+public int total paid_members,
+
+public double conversion rate,
+
+public MembershipStatistics(int total members, int total paid members, double conversion rate) (
+
+this total members total members:
+
+this total paid members total paid members
+
+this.conversion rate conversion rate}}}
+public class Solution (
+
+This is not a complete test suite, but tests some basic functionality of the code and shows how to use it.
+
+public static void main(String[] args) (
+
+testMember
+
+testMembership():
+
+1
+
+public static void testMember) (
+
+1
+
+System.out.println("Running testMember"); Member testMember new Member(1, "John Doe", MembershipStatus BASIC assert testMember.memberld == 1; assert testMember.name.equals("John Doe
+
+assert testMember.membershipStatus == Membership Status BASIC;
+
+public static void testMembership (
+
+System.out.printin("Running testMembership"); Membership testMembership new Membership(): Member testMember new Member(1, "John Doe", MembershipStatus.PRO) testMembership.addMernber(testMember); assert testMembership.members.size() 1;
+
+assert testMembership.members.get(0).equals(testMember)
+
+testMembership.updateMembership(1, Membership Status PRO assert testMembership.members.get(0).membership Status MembershipStatus.PRC
+
+Member testMember2 = new Member(2, "Alex C. MembershipStatus BASIC testMembership.addMember(testMember2);
+
+Member testMember3 new Member(3, "Marie C, MembershipStatus ELITES testMembership.addMember(testMember 31,
+
+Member testMember4 new Member(4, "Joe D", Membership Status. PROX testMembership.addMember(testMember 4)
+MembershipStatistics attendanceStats = testMembership.getMembershipStatistics();
+
+assert attendanceStats.total_members == 4;
+
+assert attendanceStats.total_paid_members == 3;
+
+assert Math.abs(attendanceStats.conversion_rate - 75.00) <0.1}}
+
+
+
+
+2
+2-1) Write a function in LogFile named countJourneys() that returns how many complete journeys there are in the given LogFile.
+
+*/
+
+/*
+
+For our first task:
+
+1-1) Read through and understand the code and comments below. Feel free to run the code and tests.
+
+1-2) The tests are not passing due to a bug in the code. Make the necessary changes to LogEntry to fix the bug.
+
+*/
+
+
+
