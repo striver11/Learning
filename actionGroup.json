@@ -1,0 +1,18 @@
+{
+  "functions": [
+    {
+      "name": "get_json_data",
+      "description": "Retrieve JSON data file from S3 bucket. If file not found, return Template.json instead.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "Name of the JSON file in the S3 bucket (e.g., inlandmarine.json)"
+          }
+        },
+        "required": ["filename"]
+      }
+    }
+  ]
+}
